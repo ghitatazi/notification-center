@@ -1,0 +1,120 @@
+[
+  {
+    "id": "899384055856",
+    "type": "recommendation",
+    "description": {
+      "text": "Try Deezer Premium for only 5,49€/month for 12 months"
+    }
+  },
+  {
+    "id": "899384055857",
+    "type": "update",
+    "validity_period": {
+      "createdAt": "2022-12-09",
+      "expiresAt": "2022-12-10"
+    },
+    "description": {
+      "text": "Congratulations! Your password has been updated correctly"
+    }
+  },
+  {
+    "id": "899384055858",
+    "type": "update",
+    "validity_period": {
+      "createdAt": "2020-12-08",
+      "expiresAt": "2022-12-09"
+    },
+    "description": {
+      "text": "This needs to be filtered"
+    }
+  },
+  {
+    "id": "899384055859",
+    "type": "new_content",
+    "content": "https://www.deezer.com/fr/album/364286617",
+    "validity_period": {
+      "createdAt": "2022-10-10",
+      "expiresAt": "2022-12-10"
+    },
+    "description": {
+      "content": {
+        "type": "album",
+        "coverImg": "/lous-and-the-yakuza.jpeg",
+        "title": "IOTA",
+        "artists": ["Lous and The Yakuza"]
+      }
+    }
+  },
+  {
+    "id": "899384055810",
+    "type": "new_content",
+    "content": "https://www.deezer.com/fr/playlist/687945565",
+    "validity_period": {
+      "createdAt": "2022-11-30",
+      "expiresAt": "2022-12-08"
+    },
+    "description": {
+      "content": {
+        "type": "playlist",
+        "coverImg": "/joy.jpg",
+        "title": "Hits dance",
+        "author": "Alexandre - Deezer Editeur France"
+      }
+    }
+  },
+  {
+    "id": "899384055811",
+    "type": "new_content",
+    "content": "https://www.deezer.com/search/jonas%20blue%20%E2%80%93%20rise/track",
+    "validity_period": {
+      "createdAt": "2022-09-02",
+      "expiresAt": "2023-01-01"
+    },
+    "description": {
+      "content": {
+        "type": "track",
+        "coverImg": "/rise-jonas-blue.jpeg",
+        "title": "Rise",
+        "artists": ["Jonas Blue", "Jack & Jack"],
+        "duration_time": "02:33"
+      }
+    }
+  },
+  {
+    "id": "899384055812",
+    "type": "new_content",
+    "content": "https://www.deezer.com/fr/show/653872",
+    "validity_period": {
+      "createdAt": "2022-12-07",
+      "expiresAt": "2022-12-14"
+    },
+    "description": {
+      "content": {
+        "type": "podcast",
+        "coverImg": "",
+        "title": "Fast Fashion | Vente Flash",
+        "author": "Guerre de Business",
+        "duration_time": "26:47"
+      }
+    }
+  },
+  {
+    "id": "899384055813",
+    "type": "sharing",
+    "content": "https://www.deezer.com/fr/album/269898812",
+    "validity_period": {
+      "createdAt": "2022-12-08",
+      "expiresAt": "2022-12-10"
+    },
+    "description": {
+      "sender": "Lucas",
+      "message": "Check this content, it rocks!",
+      "content": {
+        "type": "album",
+        "coverImg": "/wonderwall.jpeg",
+        "title": "Wonderwall",
+        "artists": ["Oasis"]
+      }
+    }
+  }
+]

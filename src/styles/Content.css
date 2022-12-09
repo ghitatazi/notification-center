@@ -1,0 +1,40 @@
+.content {
+  display: grid;
+  grid-template-columns: 95px 200px;
+  grid-template-rows: 35px 30px 30px 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.content-title {
+  grid-row: 1 / 4;
+  grid-column: 2 / 2;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.content-artists {
+  grid-row: 2 / span 1;
+  grid-column: 2 / 2;
+  align-self: end;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.content-coverImg-container {
+  grid-row: 1 / span 3;
+  grid-column: 1 / 2;
+}
+
+.content-coverImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  border: 1px solid var(--custom-grey-color);
+}
+
+.content-details {
+  grid-row: 4 / 4;
+  grid-column: 1 / 2;
+  font-size: 12px;
+}

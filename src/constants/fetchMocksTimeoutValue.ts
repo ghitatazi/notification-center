@@ -1,0 +1,1 @@
+export const FETCH_MOCKS_TIMEOUT_VALUE = 1000;

@@ -1,0 +1,14 @@
+.link-to-content {
+  display: block;
+  padding-left: 10px;
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
+
+.link-to-content:hover {
+  background-color: #e8e8e8;
+  color: #b8b8b8;
+  transition: opacity 0.3s;
+  opacity: 1;
+  z-index: 2;
+}
