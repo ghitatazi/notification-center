@@ -1,7 +1,7 @@
 import React from "react";
 import { DeezerNewContent } from "../../types/notification";
 import { getDateMonthFromDateString } from "../../utils/date";
-import { Content } from "../content/Content";
+import { ContentContainer } from "../content/Content.container";
 import { LinkToContent } from "../content/LinkToContent";
 
 const NewContent = ({
@@ -13,7 +13,7 @@ const NewContent = ({
     <>
       <div className="createdAt">{getDateMonthFromDateString(createdAt)}</div>
       <LinkToContent link={contentLink}>
-        <Content {...content} />
+        <ContentContainer {...content} />
       </LinkToContent>
     </>
   );

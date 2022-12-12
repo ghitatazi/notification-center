@@ -34,7 +34,7 @@ const Notification = ({
       : setTotalReadNotifications((total) => total - 1);
   }, [isRead]);
 
-  const getSpecificContent = useCallback(
+  const getSpecificNotification = useCallback(
     (notification: DeezerNotification) => {
       const { type } = notification;
       let returnedComponent;
@@ -75,7 +75,7 @@ const Notification = ({
       <div className="notification-title">
         {title} {!!isRead && <Logo />}
       </div>
-      {getSpecificContent(notification)}
+      {getSpecificNotification(notification)}
       <button className="notification-mark-reading" onClick={toggleIsRead}>
         {buttonIsReadText}
       </button>

@@ -1,6 +1,7 @@
 describe("sortNotificationsInDescOrder", function () {
   // TODO
-  it("sortNotificationsInDescOrder simple case", function () {
+
+  it("should be truthy", function () {
     expect(true).toBeTruthy();
   });
 });

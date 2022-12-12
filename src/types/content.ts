@@ -7,57 +7,41 @@ export const enum CONTENT_TYPE {
   PODCAST = "podcast",
 }
 
+export type Artists = string[];
+export type Author = string;
+export type DurationTime = string;
+
 type BasicContent = {
   coverImg?: string;
   title: string;
 };
 
-type Album = BasicContent & {
+// adding Deezer as a prefix to all types of contents to avoid confusion with the associated React components
+export type DeezerAlbum = BasicContent & {
   type: CONTENT_TYPE.ALBUM;
-  [ARTISTS]: string[];
+  [ARTISTS]: Artists;
 };
 
-type Playlist = BasicContent & {
+export type DeezerPlaylist = BasicContent & {
   type: CONTENT_TYPE.PLAYLIST;
-  [AUTHOR]: string;
+  [AUTHOR]: Author;
 };
 
-type Track = BasicContent & {
+export type DeezerTrack = BasicContent & {
   type: CONTENT_TYPE.TRACK;
-  [ARTISTS]: string[];
-  [DURATION_TIME]: string;
+  [ARTISTS]: Artists;
+  [DURATION_TIME]: DurationTime;
 };
 
-type Podcast = BasicContent & {
+export type DeezerPodcast = BasicContent & {
   type: CONTENT_TYPE.PODCAST;
-  [AUTHOR]: string;
-  [DURATION_TIME]: string;
+  [AUTHOR]: Author;
+  [DURATION_TIME]: DurationTime;
 };
 
 // add a type here if a new type of content is added
-export type ContentType = Album | Playlist | Track | Podcast;
-
-type HasArtists<T> = typeof ARTISTS extends keyof T ? T : never;
-type HasAuthor<T> = typeof AUTHOR extends keyof T ? T : never;
-type HasDurationTime<T> = typeof DURATION_TIME extends keyof T ? T : never;
-
-// add a type here if a new type of content is added
-export type HasContentArtists =
-  | HasArtists<Album>
-  | HasArtists<Playlist>
-  | HasArtists<Track>
-  | HasArtists<Podcast>;
-
-// add a type here if a new type of content is added
-export type HasContentAuthor =
-  | HasAuthor<Album>
-  | HasAuthor<Playlist>
-  | HasAuthor<Track>
-  | HasAuthor<Podcast>;
-
-// add a type here if a new type of content is added
-export type HasContentDurationTime =
-  | HasDurationTime<Album>
-  | HasDurationTime<Playlist>
-  | HasDurationTime<Track>
-  | HasDurationTime<Podcast>;
+export type ContentType =
+  | DeezerAlbum
+  | DeezerPlaylist
+  | DeezerTrack
+  | DeezerPodcast;

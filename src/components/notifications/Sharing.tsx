@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/Sharing.css";
 import { DeezerSharing } from "../../types/notification";
 import { getDateMonthFromDateString } from "../../utils/date";
-import { Content } from "../content/Content";
+import { ContentContainer } from "../content/Content.container";
 import { LinkToContent } from "../content/LinkToContent";
 
 const Sharing = ({
@@ -16,7 +16,7 @@ const Sharing = ({
       <p>{`*${sender}* has shared something with you`}</p>
       <p className="sharing-message">{`"${message}"`}</p>
       <LinkToContent link={contentLink}>
-        <Content {...content} />
+        <ContentContainer {...content} />
       </LinkToContent>
     </>
   );
