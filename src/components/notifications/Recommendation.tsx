@@ -1,5 +1,5 @@
 import React from "react";
-import { DeezerRecommendation } from "../types/notification";
+import { DeezerRecommendation } from "../../types/notification";
 
 const Recommendation = ({
   description: { text },

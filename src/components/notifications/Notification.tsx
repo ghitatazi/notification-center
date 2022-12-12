@@ -1,10 +1,13 @@
 import React, { useCallback, useMemo, useState } from "react";
 // @ts-ignore
-import { ReactComponent as Logo } from "../assets/icons8-done.svg";
-import { NOTIFICATION_TYPE_WORDINGS } from "../constants/notificationTypeWordings";
-import { useUpdateEffect } from "../hooks/useUpdateEffect";
-import "../styles/Notification.css";
-import { DeezerNotification, NOTIFICATION_TYPE } from "../types/notification";
+import { ReactComponent as Logo } from "../../assets/icons8-done.svg";
+import { NOTIFICATION_TYPE_WORDINGS } from "../../constants/notificationTypeWordings";
+import { useUpdateEffect } from "../../hooks/useUpdateEffect";
+import "../../styles/Notification.css";
+import {
+  DeezerNotification,
+  NOTIFICATION_TYPE,
+} from "../../types/notification";
 import NewContent from "./NewContent";
 import Recommendation from "./Recommendation";
 import Sharing from "./Sharing";
@@ -68,7 +71,7 @@ const Notification = ({
   );
 
   return (
-    <div className="notification">
+    <div>
       <div className="notification-title">
         {title} {!!isRead && <Logo />}
       </div>

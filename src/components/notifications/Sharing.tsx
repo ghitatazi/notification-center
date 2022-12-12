@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/Sharing.css";
-import { DeezerSharing } from "../types/notification";
-import { getDateMonthFromDateString } from "../utils/date";
-import { Content } from "./Content";
-import { LinkToContent } from "./LinkToContent";
+import "../../styles/Sharing.css";
+import { DeezerSharing } from "../../types/notification";
+import { getDateMonthFromDateString } from "../../utils/date";
+import { Content } from "../content/Content";
+import { LinkToContent } from "../content/LinkToContent";
 
 const Sharing = ({
   content: contentLink,

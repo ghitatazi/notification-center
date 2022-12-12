@@ -1,13 +1,13 @@
-import placeholderImg from "../assets/listen.jpg";
-import { ARTISTS, AUTHOR, DURATION_TIME } from "../constants/contentKeys";
-import { CONTENT_TYPE_WORDINGS } from "../constants/contentTypeWordings";
-import "../styles/Content.css";
+import placeholderImg from "../../assets/listen.jpg";
+import { ARTISTS, AUTHOR, DURATION_TIME } from "../../constants/contentKeys";
+import { CONTENT_TYPE_WORDINGS } from "../../constants/contentTypeWordings";
+import "../../styles/Content.css";
 import {
   ContentType,
   HasContentArtists,
   HasContentAuthor,
   HasContentDurationTime,
-} from "../types/content";
+} from "../../types/content";
 
 export const Content = (content: ContentType): JSX.Element => {
   const hasAuthor = AUTHOR in content;

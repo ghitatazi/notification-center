@@ -1,6 +1,9 @@
-import { useNotifications } from "../hooks/useNotifications";
-import "../styles/NotificationCenter.css";
-import Notification from "./Notification";
+import { useNotifications } from "../../hooks/useNotifications";
+import "../../styles/NotificationCenter.css";
+import Notification from "../notifications/Notification";
+import { Empty } from "./Empty";
+import { Error } from "./Error";
+import { Loading } from "./Loading";
 
 export const NotificationCenter = (): JSX.Element => {
   const {
@@ -12,9 +15,11 @@ export const NotificationCenter = (): JSX.Element => {
     setTotalReadNotifications,
   } = useNotifications();
 
-  if (isLoading) return <>{"Loading..."}</>;
+  if (isLoading) return <Loading />;
 
-  if (isError) return <>{"Error..."}</>;
+  if (isError) return <Error />;
+
+  if (totalNotifications === 0) return <Empty />;
 
   return (
     <div className="notification-center">
@@ -34,9 +39,6 @@ export const NotificationCenter = (): JSX.Element => {
           {index < totalNotifications - 1 && <hr />}
         </>
       ))}
-      {totalNotifications === 0 && (
-        <>{"You have no notifications for the moment"}</>
-      )}
     </div>
   );
 };

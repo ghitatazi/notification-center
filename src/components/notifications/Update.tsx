@@ -1,6 +1,6 @@
 import React from "react";
-import { DeezerUpdate } from "../types/notification";
-import { getDateMonthFromDateString } from "../utils/date";
+import { DeezerUpdate } from "../../types/notification";
+import { getDateMonthFromDateString } from "../../utils/date";
 
 const Update = ({
   validity_period: { createdAt },

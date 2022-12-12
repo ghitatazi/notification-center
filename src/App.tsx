@@ -1,5 +1,5 @@
 import "./App.css";
-import { NotificationCenter } from "./components/NotificationCenter";
+import { NotificationCenter } from "./components/notification-center/NotificationCenter";
 
 function App() {
   return (

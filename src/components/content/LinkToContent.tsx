@@ -1,4 +1,4 @@
-import "../styles/LinkToContent.css";
+import "../../styles/LinkToContent.css";
 
 type LinkToContentProps = { link: string; children: JSX.Element };
 
