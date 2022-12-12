@@ -72,7 +72,9 @@ const sortNotificationsInDescOrder = (notifications: DeezerNotification[]) => {
   return notifications;
 };
 
-export const transformNotifications = (notifications: DeezerNotification[]) => {
+export const transformNotifications = (
+  notifications: DeezerNotification[]
+): DeezerNotification[] => {
   const filtered = filterExpiredNotifications(notifications);
   return sortNotificationsInDescOrder(filtered);
 };

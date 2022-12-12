@@ -1,12 +1,12 @@
+.notification {
+  margin-bottom: 10px;
+}
+
 .notification-title {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 12px;
-}
-
-.notification-mark-reading {
-  margin-bottom: 10px;
 }
 
 .createdAt {

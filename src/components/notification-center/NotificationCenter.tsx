@@ -1,5 +1,9 @@
+import { useEffect } from "react";
+import { DATA_LOADING_STEP } from "../../constants/dataLoadingStep";
+import { useLoadMore } from "../../hooks/useLoadMore";
 import { useNotifications } from "../../hooks/useNotifications";
 import "../../styles/NotificationCenter.css";
+import { DeezerNotification } from "../../types/notification";
 import Notification from "../notifications/Notification";
 import { Empty } from "./Empty";
 import { Error } from "./Error";
@@ -15,6 +19,13 @@ export const NotificationCenter = (): JSX.Element => {
     setTotalReadNotifications,
   } = useNotifications();
 
+  const { setDataToBeSliced, slicedData, isCompleted, loadMore } =
+    useLoadMore<DeezerNotification>({ step: DATA_LOADING_STEP });
+
+  useEffect(() => {
+    setDataToBeSliced(notifications);
+  }, [notifications]);
+
   if (isLoading) return <Loading />;
 
   if (isError) return <Error />;
@@ -29,16 +40,26 @@ export const NotificationCenter = (): JSX.Element => {
         {totalNotifications - totalReadNotifications}
       </p>
       <hr />
-      {notifications.map((notification, index) => (
-        <>
+      {slicedData.map((notification, index) => (
+        <div key={notification.id}>
           <Notification
-            key={notification.id}
             notification={notification}
             setTotalReadNotifications={setTotalReadNotifications}
           />
-          {index < totalNotifications - 1 && <hr />}
-        </>
+          <hr />
+        </div>
       ))}
+      <div className="load-more-container">
+        {isCompleted ? (
+          <button type="button" disabled>
+            That's It
+          </button>
+        ) : (
+          <button type="button" onClick={loadMore}>
+            Load More
+          </button>
+        )}
+      </div>
     </div>
   );
 };

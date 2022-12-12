@@ -71,7 +71,7 @@ const Notification = ({
   );
 
   return (
-    <div>
+    <div className="notification">
       <div className="notification-title">
         {title} {!!isRead && <Logo />}
       </div>
