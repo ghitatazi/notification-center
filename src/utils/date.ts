@@ -4,7 +4,7 @@ export const isValidDate = (date: Date) => !isNaN(date.getTime());
 
 export const isDateInTheFuture = (date: Date) => {
   const today = new Date();
-  return date.toDateString() > today.toDateString();
+  return date.getTime() > today.getTime();
 };
 
 const areDatesEqual = (date1: Date, date2: Date) =>

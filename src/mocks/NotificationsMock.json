@@ -34,7 +34,7 @@
     "content": "https://www.deezer.com/fr/album/364286617",
     "validity_period": {
       "createdAt": "2022-10-10",
-      "expiresAt": "2022-12-10"
+      "expiresAt": "2022-12-15"
     },
     "description": {
       "content": {
@@ -51,7 +51,7 @@
     "content": "https://www.deezer.com/fr/playlist/687945565",
     "validity_period": {
       "createdAt": "2022-11-30",
-      "expiresAt": "2022-12-08"
+      "expiresAt": "2022-12-24"
     },
     "description": {
       "content": {
@@ -86,7 +86,7 @@
     "content": "https://www.deezer.com/fr/show/653872",
     "validity_period": {
       "createdAt": "2022-12-07",
-      "expiresAt": "2022-12-14"
+      "expiresAt": "2023-02-14"
     },
     "description": {
       "content": {
@@ -104,7 +104,7 @@
     "content": "https://www.deezer.com/fr/album/269898812",
     "validity_period": {
       "createdAt": "2022-12-08",
-      "expiresAt": "2022-12-10"
+      "expiresAt": "2024-12-11"
     },
     "description": {
       "sender": "Lucas",
